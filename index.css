@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 99.2%;
+    --foreground: 0 0% 0%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 0%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 0%;
+    --primary: 0 0% 0%;
+    --primary-foreground: 0 0% 99.2%;
+    --secondary: 30 8% 94%;
+    --secondary-foreground: 0 0% 0%;
+    --muted: 30 8% 94%;
+    --muted-foreground: 0 0% 45.9%;
+    --accent: 30 8% 94%;
+    --accent-foreground: 0 0% 0%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 83.5%;
+    --input: 0 0% 83.5%;
+    --ring: 0 0% 0%;
+    --radius: 0.625rem;
+    --calm-white: #FDFDFD;
+    --calm-black: #000000;
+    --calm-dark-gray: #484848;
+    --calm-medium-gray: #D5D5D5;
+    --calm-gold: #B0A28E;
+    --calm-olive: #7A9A53;
+    --calm-forest: #263F23;
+    --calm-dark-green: #192918;
+    --calm-sage: #ADBEA3;
+    --calm-text-gray: #757575;
+    --calm-muted-gray: #828282;
+  }
+
+  .dark {
+    --background: 0 0% 0%;
+    --foreground: 0 0% 99.2%;
+    --card: 0 0% 5%;
+    --card-foreground: 0 0% 99.2%;
+    --popover: 0 0% 5%;
+    --popover-foreground: 0 0% 99.2%;
+    --primary: 0 0% 99.2%;
+    --primary-foreground: 0 0% 0%;
+    --secondary: 0 0% 10%;
+    --secondary-foreground: 0 0% 99.2%;
+    --muted: 0 0% 10%;
+    --muted-foreground: 0 0% 64.9%;
+    --accent: 0 0% 10%;
+    --accent-foreground: 0 0% 99.2%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 15%;
+    --input: 0 0% 15%;
+    --ring: 0 0% 83.9%;
+  }
+
+  body {
+    @apply bg-[#FDFDFD] text-[#000000] font-sans;
+    overflow-x: hidden;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+
+  ::selection {
+    background-color: #000000;
+    color: #FFFFFF;
+  }
+
+  .dark ::selection {
+    background-color: #FFFFFF;
+    color: #000000;
+  }
+}
